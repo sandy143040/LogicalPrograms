@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +10,9 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter integer value");
-            int num = Convert.ToInt32(Console.ReadLine());
-            ReverseNumber.FindReverseNumber(num);
+            Console.WriteLine("Enter number");
+            int n = Convert.ToInt32(Console.ReadLine());
+            CouponNumbers.getDistinctNumbers(n);
             Console.ReadLine();
         }
     }
