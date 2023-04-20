@@ -10,9 +10,11 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Logical Programming Problem");
+            Console.WriteLine("Please Enter Value");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Fibonacci.FindFibonacci(n);
             Console.ReadLine();
-                
+
         }
     }
 }
