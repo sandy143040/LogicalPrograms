@@ -10,13 +10,9 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter Value");
-            int n = Convert.ToInt32(Console.ReadLine());
-            bool b = PerfectNumber.IsPerfect(n);
-            if (b)
-                Console.WriteLine("Its a perfect number");
-            else
-                Console.WriteLine("Its not a perfect number");
+            Console.WriteLine("Please enter integer number to find prime or not");
+            int input = Convert.ToInt32(Console.ReadLine());
+            PrimeNumber.FindPrimeNumber(input);
             Console.ReadLine();
 
         }
