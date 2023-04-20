@@ -11,7 +11,10 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
 
-            Stopwatch.StopwatchFunction();
+            Console.WriteLine("Enter number");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Coupon.getDistinctNumbers(n);
+            Console.ReadLine();
 
         }
     }

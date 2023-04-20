@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogicalPrograms
 {
-    internal class CouponNumbers
+    internal class Coupon
     {
         public static void getDistinctNumbers(int number3)
         {
@@ -28,6 +28,6 @@ namespace LogicalPrograms
             }
         }
 
+
     }
 }
-
