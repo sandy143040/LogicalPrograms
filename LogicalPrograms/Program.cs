@@ -10,11 +10,10 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter integer number to find prime or not");
-            int input = Convert.ToInt32(Console.ReadLine());
-            PrimeNumber.FindPrimeNumber(input);
+            Console.WriteLine("Please enter integer value");
+            int num = Convert.ToInt32(Console.ReadLine());
+            ReverseNumber.FindReverseNumber(num);
             Console.ReadLine();
-
         }
     }
 }
