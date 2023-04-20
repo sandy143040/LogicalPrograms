@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +6,28 @@ using System.Threading.Tasks;
 
 namespace LogicalPrograms
 {
-    internal class ReverseNumber
+    internal class CouponNumbers
     {
-
-        public static void FindReverseNumber(int num)
+        public static void getDistinctNumbers(int number3)
         {
-
-            int result = 0;
-            int rem = 0;
-            while (num != 0)
+            Random random = new Random();
+            int[] array = new int[number3];
+            int i = 0;
+            while (array.Length > i)
             {
-                rem = num % 10;
-                result = result * 10 + rem;
-                num = num / 10;
+                int randomNumber = random.Next(1, 50);
+                if (!array.Contains(randomNumber))
+                {
+                    array[i] = randomNumber;
+                    i++;
+                }
             }
-            Console.WriteLine(result);
+            foreach (int j in array)
+            {
+                Console.Write(j + " ");
+            }
         }
+
     }
 }
+
