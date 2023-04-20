@@ -10,10 +10,7 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter integer value");
-            int num = Convert.ToInt32(Console.ReadLine());
-            ReverseNumber.FindReverseNumber(num);
-            Console.ReadLine();
+            Stopwatch.StopwatchFunction();
         }
     }
 }
