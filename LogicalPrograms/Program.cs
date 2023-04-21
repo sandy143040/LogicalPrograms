@@ -10,12 +10,10 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Enter number");
-            int n = Convert.ToInt32(Console.ReadLine());
-            Coupon.getDistinctNumbers(n);
+            Console.WriteLine("Please Enter Amount");
+            int amount = Convert.ToInt32(Console.ReadLine());
+            VendingMachine.GetMinimumNumOfNotes(amount);
             Console.ReadLine();
-
         }
     }
 }
