@@ -10,9 +10,10 @@ namespace NunitTesting
     {
         static void Main(string[] args)
         {
-            double monthlyPayment = LoanCalculator.CalculateMonthlyPayment(10000, 5, 3.5);
-            Console.WriteLine("Your monthly payment is: " + monthlyPayment);
-
+            Console.Write("Enter a non-negative number: ");
+            double c = double.Parse(Console.ReadLine());
+            double sqrtC = MathUtils.Sqrt(c);
+            Console.WriteLine($"The square root of {c} is approximately {sqrtC}");
             Console.ReadLine();
         }
     }
