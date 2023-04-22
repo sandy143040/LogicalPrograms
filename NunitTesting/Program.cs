@@ -10,7 +10,9 @@ namespace NunitTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wecome to Logical Programming Problem");
+            double monthlyPayment = LoanCalculator.CalculateMonthlyPayment(10000, 5, 3.5);
+            Console.WriteLine("Your monthly payment is: " + monthlyPayment);
+
             Console.ReadLine();
         }
     }
