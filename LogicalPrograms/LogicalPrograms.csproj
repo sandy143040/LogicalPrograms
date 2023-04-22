@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo1.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="VendingMachine.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

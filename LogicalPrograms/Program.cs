@@ -10,9 +10,13 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter Amount");
-            int amount = Convert.ToInt32(Console.ReadLine());
-            VendingMachine.GetMinimumNumOfNotes(amount);
+            int m = int.Parse(args[0]);
+            int d = int.Parse(args[1]);
+            int y = int.Parse(args[2]);
+
+
+            int day = Util.dayOfWeek(m, d, y);
+            Console.WriteLine("Day is:" + day);
             Console.ReadLine();
         }
     }
