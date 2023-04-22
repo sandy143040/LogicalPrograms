@@ -10,13 +10,15 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
-            int m = int.Parse(args[0]);
-            int d = int.Parse(args[1]);
-            int y = int.Parse(args[2]);
+            Console.WriteLine("Enter a temperature:");
+            double temperature = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Enter the unit (C for Celsius or F for Fahrenheit):");
+            char unit = char.Parse(Console.ReadLine());
 
-            int day = Util.dayOfWeek(m, d, y);
-            Console.WriteLine("Day is:" + day);
+            Double convertedTemperature = Util.temperatureConversion(temperature, unit);
+            Console.WriteLine("Converted temperature: "+convertedTemperature);
+
             Console.ReadLine();
         }
     }
