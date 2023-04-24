@@ -10,10 +10,9 @@ namespace NunitTesting
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a non-negative number: ");
-            double c = double.Parse(Console.ReadLine());
-            double sqrtC = MathUtils.Sqrt(c);
-            Console.WriteLine($"The square root of {c} is approximately {sqrtC}");
+            Console.Write("Enter a decimal number: ");
+            int decimalNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("Binary representation: " + BinaryConverter.ToBinary(decimalNumber));
             Console.ReadLine();
         }
     }
